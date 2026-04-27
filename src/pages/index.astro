@@ -6,6 +6,288 @@ import Layout from '../layouts/Layout.astro';
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Miguel Aguilera | Portfolio">
+
+  <!-- NAVBAR -->
+ <nav class="navbar">
+  <h3></h3>
+
+  <div class="nav-links">
+    <a href="#projects">Proyectos</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contacto</a>
+  </div>
+</nav>
+  <!-- HERO -->
+  <section class="hero fade">
+    <div class="hero-text">
+      <h1 class="title gradient-text">Miguel Aguilera</h1>
+      <h2 class="subtitle">Junior Developer</h2>
+
+      <div class="text-block">
+        <p>Apasionado por la tecnología y sus avances, con gran capacidad de adaptabilidad y aprendizaje continuo en el desarrollo de software.</p>
+        <p>Experiencia en desarrollo full-stack con tecnologías modernas y entornos colaborativos.</p>
+        <p>Capacidad de trabajo en equipo y orientación a la resolución de problemas.</p>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="/cv.pdf" download class="btn cv-btn big">⬇ Descargar CV</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="/images/fotocv.jpeg" alt="Miguel Aguilera">
+    </div>
+  </section>
+  <!-- PROYECTOS -->
+  <section id="projects" class="section fade">
+    <h2>Proyectos</h2>
+    <div class="grid">
+
+      <div class="project glass">
+        <img src="/images/dishplanet.png">
+        <h3>Dishplanet</h3>
+        <p>Aplicación para gestión de restaurantes con Spring Boot, MySQL y seguridad con Spring Security.</p>
+        <div class="tags">
+          <span>Java</span><span>Spring</span><span>MySQL</span><span>Docker</span>
+        </div>
+        <a href="https://github.com/Raknar9/DishPlanet" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project glass">
+        <img src="/images/facial2.png">
+        <h3>Detector en tiempo real</h3>
+        <p>Detección de rostros en tiempo real con OpenCV y Streamlit.</p>
+        <div class="tags">
+          <span>Python</span><span>OpenCV</span><span>Streamlit</span>
+        </div>
+        <a href="https://github.com/Raknar9/Detector-Facial-Tiempo-real" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project glass">
+        <img src="/images/facial.png">
+        <h3>Similitud facial</h3>
+        <p>Comparación de rostros usando DeepFace y embeddings.</p>
+        <div class="tags">
+          <span>Python</span><span>DeepFace</span><span>OpenCV</span>
+        </div>
+        <a href="https://github.com/Raknar9/Detector-de-Similitudes-Faciales" target="_blank">GitHub</a>
+      </div>
+
+    </div>
+  </section>
+   <!-- EXPERIENCIA -->
+  <section class="section fade">
+    <h2>Experiencia</h2>
+    <div class="card glass">
+      <h3>Aelis Consulting (2024)</h3>
+      <ul>
+        <li>Desarrollo en Java</li>
+        <li>Implementación de soluciones en Sage 200</li>
+        <li>Trabajo en entornos empresariales</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section fade">
+    <h2>Habilidades</h2>
+    <div class="skills-container">
+
+      <div class="skill-block glass">
+        <h3>🌐 Desarrollo Web</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript, Bootstrap</li>
+          <li>Spring Boot (Full Stack)</li>
+          <li>APIs REST</li>
+          <li>Spring Security</li>
+          <li>Python</li>
+        </ul>
+      </div>
+
+      <div class="skill-block glass">
+        <h3>⚙️ Backend</h3>
+        <ul>
+          <li>JPA / Hibernate</li>
+          <li>Java + Spring Boot</li>
+          <li>MySQL</li>
+          <li>Patrones de diseño</li>
+          <li>Sage 200c</li>
+        </ul>
+      </div>
+
+      <div class="skill-block glass">
+        <h3>🚀 DevOps</h3>
+        <ul>
+          <li>Docker</li>
+          <li>Apache / Nginx</li>
+          <li>CI/CD</li>
+        </ul>
+      </div>
+
+      <div class="skill-block glass">
+        <h3>🔧 Herramientas</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Scrum</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <!-- INTERESES -->
+  <section class="section fade">
+    <h2>Intereses futuros</h2>
+    <div class="card glass">
+      <p>Actualmente estoy ampliando mis conocimientos en tecnologías modernas como Angular para desarrollo frontend avanzado y Cloud Computing para despliegue y escalabilidad de aplicaciones.</p>
+      <p>Me mantengo en constante aprendizaje e informado sobre nuevas tecnologías del sector para seguir creciendo como desarrollador.</p>
+      <p>Además adentrándome en Angular y tecnologías Cloud (AWS, despliegue y escalabilidad).</p>
+      <p>Me mantengo actualizado con las tendencias del desarrollo moderno, buscando evolucionar hacia arquitecturas más eficientes y escalables.</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="section fade">
+    <h2>Contacto</h2>
+    <div class="card glass">
+      <p><strong>Email:</strong> aguilejan99@gmail.com</p>
+      <p><strong>Teléfono:</strong> 633 95 07 28</p>
+      <a href="https://github.com/Raknar9" class="social-btn github-btn" target="_blank">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/miguel-aguilera-70b068336/" class="social-btn linkedin-btn" target="_blank">💼 LinkedIn</a>
+    </div>
+  </section>
+
 </Layout>
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+});
+
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+
+<style>
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* separa izquierda y derecha */
+  align-items: center; /* centra verticalmente */
+  padding: 15px 40px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+   box-sizing: border-box;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+{
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(10px);
+  z-index:100;
+}
+
+.navbar a {
+  margin-left:15px;
+  color:white;
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:8px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background: rgba(56,189,248,0.2);
+  color:#38bdf8;
+}
+
+/* BOTONES REDES */
+.social-btn {
+  display:inline-block;
+  padding:10px 18px;
+  margin-top:10px;
+  margin-right:10px;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+  transition: all 0.3s ease;
+}
+
+.github-btn {
+  background:#111827;
+  border:1px solid #38bdf8;
+}
+
+.github-btn:hover {
+  background:#38bdf8;
+  color:black;
+}
+
+.linkedin-btn {
+  background:#0a66c2;
+}
+
+.linkedin-btn:hover {
+  background:#38bdf8;
+  color:black;
+}
+
+.hero { padding:120px 60px; display:flex; justify-content:space-between; }
+
+.gradient-text {
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero-img img { width:200px; border-radius:50%; box-shadow:0 0 30px #38bdf8; }
+.btn { padding:10px 20px; border-radius:8px; }
+
+.cv-btn {
+  background: linear-gradient(90deg,#38bdf8,#818cf8);
+  color:black;
+  font-weight:bold;
+  box-shadow:0 0 15px rgba(56,189,248,0.6);
+}
+
+.cv-btn:hover {
+  transform:scale(1.05);
+}
+
+.big { padding:14px 26px; font-size:16px; }
+
+.section { padding:80px 60px; }
+
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
+
+.glass { background:rgba(255,255,255,0.05); backdrop-filter:blur(10px); border-radius:15px; padding:20px; }
+
+.project img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.project:hover { transform:translateY(-10px); transition:0.3s; }
+
+.tags span { background:#38bdf8; color:black; padding:4px 8px; margin:4px; border-radius:6px; }
+
+.skills-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
+
+.fade { opacity:0; transform:translateY(20px); transition:0.6s; }
+.visible { opacity:1; transform:translateY(0); }
+</style>
