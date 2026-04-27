@@ -51,7 +51,9 @@ import Layout from '../layouts/Layout.astro';
         <div class="tags">
           <span>Java</span><span>Spring</span><span>MySQL</span><span>Docker</span>
         </div>
-        <a href="https://github.com/Raknar9/DishPlanet" target="_blank">GitHub</a>
+        <a href="https://github.com/Raknar9/DishPlanet" target="_blank" class="github-btn">
+  🐙 Ver en Github
+</a>
       </div>
 
       <div class="project glass">
@@ -61,7 +63,9 @@ import Layout from '../layouts/Layout.astro';
         <div class="tags">
           <span>Python</span><span>OpenCV</span><span>Streamlit</span>
         </div>
-        <a href="https://github.com/Raknar9/Detector-Facial-Tiempo-real" target="_blank">GitHub</a>
+		<a href="https://github.com/Raknar9/Detector-Facial-Tiempo-real" target="_blank" class="github-btn">
+  🐙 Ver en Github
+</a>
       </div>
 
       <div class="project glass">
@@ -71,7 +75,9 @@ import Layout from '../layouts/Layout.astro';
         <div class="tags">
           <span>Python</span><span>DeepFace</span><span>OpenCV</span>
         </div>
-        <a href="https://github.com/Raknar9/Detector-de-Similitudes-Faciales" target="_blank">GitHub</a>
+			<a href="https://github.com/Raknar9/Detector-de-Similitudes-Faciales" target="_blank" class="github-btn">
+  🐙 Ver en Github
+</a>
       </div>
 
     </div>
@@ -172,6 +178,25 @@ document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 </script>
 
 <style>
+.github-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #111827, #1f2937);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #38bdf8;
+  transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(56,189,248,0.4);
+}
 .navbar {
   position: fixed;
   top: 0;
