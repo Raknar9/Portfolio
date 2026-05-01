@@ -9,365 +9,826 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Miguel Aguilera | Portfolio">
 
   <!-- NAVBAR -->
- <nav class="navbar">
+<nav class="navbar">
   <h3></h3>
 
   <div class="nav-links">
-    <a href="#projects">Proyectos</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contacto</a>
+    <a href="#projects" data-es="Proyectos" data-en="Projects">
+      Proyectos
+    </a>
+
+    <a href="#skills" data-es="Skills" data-en="Skills">
+      Skills
+    </a>
+
+    <a href="#contact" data-es="Contacto" data-en="Contact">
+      Contacto
+    </a>
+
+    <!-- BOTÓN CAMBIO IDIOMA -->
+    <button id="lang-toggle" class="lang-btn">
+
+      <span class="lang-icon">🌐</span>
+
+      <span id="lang-text">
+        ES | EN
+      </span>
+
+    </button>
+
   </div>
 </nav>
+
   <!-- HERO -->
   <section class="hero fade">
     <div class="hero-text">
       <h1 class="title gradient-text">Miguel Aguilera</h1>
-      <h2 class="subtitle">Junior Developer</h2>
+
+      <h2
+        class="subtitle"
+        data-es="Junior Developer"
+        data-en="Junior Developer"
+      >
+        Junior Developer
+      </h2>
 
       <div class="text-block">
-        <p>
-             Apasionado por el desarrollo de software y las tecnologías cloud,
-              con gran capacidad de adaptación y aprendizaje continuo en entornos full stack.
+        <p
+          data-es="Apasionado por el desarrollo de software y las tecnologías cloud, con gran capacidad de adaptación y aprendizaje continuo en entornos full stack."
+          data-en="Passionate about software development and cloud technologies, with strong adaptability and continuous learning skills in full stack environments."
+        >
+          Apasionado por el desarrollo de software y las tecnologías cloud,
+          con gran capacidad de adaptación y aprendizaje continuo en entornos
+          full stack.
         </p>
 
-         <p>
-           Experiencia desarrollando aplicaciones web completas con Java,
-            Spring Boot, PostgreSQL, Docker y despliegue cloud utilizando herramientas modernas.
-          </p>
+        <p
+          data-es="Experiencia desarrollando aplicaciones web completas con Java, Spring Boot, PostgreSQL, Docker y despliegue cloud utilizando herramientas modernas."
+          data-en="Experience developing complete web applications using Java, Spring Boot, PostgreSQL, Docker, and cloud deployment with modern tools."
+        >
+          Experiencia desarrollando aplicaciones web completas con Java,
+          Spring Boot, PostgreSQL, Docker y despliegue cloud utilizando
+          herramientas modernas.
+        </p>
 
-          <p>
-             Interés en arquitecturas backend, seguridad, bases de datos,
-             automatización de despliegues y trabajo colaborativo mediante metodologías ágiles.
-          </p>
-</div>
-
-      <div class="hero-buttons">
-        <a href="/cv.pdf" download class="btn cv-btn big">⬇ Descargar CV</a>
+        <p
+          data-es="Interés en arquitecturas backend, seguridad, bases de datos, automatización de despliegues y trabajo colaborativo mediante metodologías ágiles."
+          data-en="Interested in backend architectures, security, databases, deployment automation, and collaborative work using agile methodologies."
+        >
+          Interés en arquitecturas backend, seguridad, bases de datos,
+          automatización de despliegues y trabajo colaborativo mediante
+          metodologías ágiles.
+        </p>
       </div>
+
+      <!-- HERO BUTTONS -->
+<div class="hero-buttons">
+
+  <!-- CV ESPAÑOL -->
+  <a
+    href="/CV_MiguelAguilera.pdf"
+    download
+    class="btn cv-btn big"
+    data-es="⬇ Descargar CV español"
+    data-en="⬇ Download spanish Resume"
+  >
+    ⬇ Descargar CV español
+  </a>
+
+  <!-- CV INGLÉS -->
+  <a
+    href="/Miguel_Aguilera_CV_English.pdf"
+    download
+    class="btn cv-btn-outline big"
+    data-es="🌍 Descargar CV Inglés"
+    data-en="🌍 Download English Resume"
+  >
+    🌍 Descargar CV Inglés
+  </a>
+
+</div>
     </div>
 
     <div class="hero-img">
-      <img src="/images/fotocv.jpeg" alt="Miguel Aguilera">
+      <img src="/images/fotocv.jpeg" alt="Miguel Aguilera" />
     </div>
   </section>
+
   <!-- PROYECTOS -->
   <section id="projects" class="section fade">
-    <h2>Proyectos</h2>
+    <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
+
     <div class="grid">
-    <div class="project glass">
-  <img src="/images/dashboard.jpeg">
 
-  <h3>TaskFlow Dashboard</h3>
-
-  <p>
-    Dashboard moderno de gestión de tareas desarrollado con Angular y Tailwind CSS.
-    Incluye CRUD dinámico, filtros, búsqueda, dashboard interactivo, Dark Mode,
-    persistencia con LocalStorage y arquitectura basada en componentes reutilizables.
-  </p>
-
-  <div class="tags">
-    <span>Angular</span>
-    <span>TypeScript</span>
-    <span>Tailwind</span>
-    <span>Signals</span>
-  </div>
-
-  <a
-    href="https://github.com/Raknar9/Panel-TaskFlow"
-    target="_blank"
-    class="github-btn"
-  >
-    🐙 Ver en Github
-  </a>
-  <a href="https://taskflowpanel.netlify.app"
-   target="_blank"
-   class="demo-btn">
-   🌐 Demo
-</a>
-
-</div>
-
-     <div class="project glass">
-  <img src="/images/dishplanet.png">
-
-  <h3>DISH PLANET</h3>
-
-  <p>
-    Plataforma web full stack para la gestión digital de restaurantes desarrollada con Spring Boot y PostgreSQL.
-    Incluye carta interactiva, sistema de pedidos, reservas, inventario en tiempo real,
-    autenticación segura con Spring Security, carga automática de datos demo,
-    despliegue cloud con Docker y arquitectura MVC completa.
-  </p>
-
-  <div class="tags">
-    <span>Java</span>
-    <span>Spring Boot</span>
-    <span>PostgreSQL</span>
-    <span>Hibernate</span>
-    <span>Docker</span>
-    <span>Thymeleaf</span>
-    <span>Spring Security</span>
-    <span>Render</span>
-  </div>
-
-  <a
-    href="https://github.com/Raknar9/DISH_PLANET"
-    target="_blank"
-    class="github-btn"
-  >
-    🐙 Ver en Github
-  </a>
-
-  <a
-    href="https://dishplanet.onrender.com"
-    target="_blank"
-    class="demo-btn"
-  >
-    🌐 Demo
-  </a>
-  <br><a>Credencial admin para demo: admin 12345</a>
-  <br><a>(Demora un momento en iniciar)</a>
-
-</div>
-
+      <!-- TASKFLOW -->
       <div class="project glass">
-        <img src="/images/facial2.png">
-        <h3>Detector en tiempo real</h3>
-        <p>Detección de rostros en tiempo real con OpenCV y Streamlit.</p>
+        <img src="/images/dashboard.jpeg" />
+
+        <h3>TaskFlow Dashboard</h3>
+
+        <p
+          data-es="Dashboard moderno de gestión de tareas desarrollado con Angular y Tailwind CSS. Incluye CRUD dinámico, filtros, búsqueda, dashboard interactivo, Dark Mode, persistencia con LocalStorage y arquitectura basada en componentes reutilizables."
+          data-en="Modern task management dashboard developed with Angular and Tailwind CSS. Includes dynamic CRUD, filters, search system, interactive dashboard, Dark Mode, LocalStorage persistence, and reusable component architecture."
+        >
+          Dashboard moderno de gestión de tareas desarrollado con Angular y
+          Tailwind CSS. Incluye CRUD dinámico, filtros, búsqueda, dashboard
+          interactivo, Dark Mode, persistencia con LocalStorage y arquitectura
+          basada en componentes reutilizables.
+        </p>
+
         <div class="tags">
-          <span>Python</span><span>OpenCV</span><span>Streamlit</span>
+          <span>Angular</span>
+          <span>TypeScript</span>
+          <span>Tailwind</span>
+          <span>Signals</span>
         </div>
-		<a href="https://github.com/Raknar9/Detector-Facial-Tiempo-real" target="_blank" class="github-btn">
-  🐙 Ver en Github
-      </a>
+
+        <a
+          href="https://github.com/Raknar9/Panel-TaskFlow"
+          target="_blank"
+          class="github-btn"
+          data-es="🐙 Ver en Github"
+          data-en="🐙 View on Github"
+        >
+          🐙 Ver en Github
+        </a>
+
+        <a
+          href="https://taskflowpanel.netlify.app"
+          target="_blank"
+          class="demo-btn"
+          data-es="🌐 Demo"
+          data-en="🌐 Live Demo"
+        >
+          🌐 Demo
+        </a>
       </div>
 
+      <!-- DISH PLANET -->
       <div class="project glass">
-        <img src="/images/facial.png">
-        <h3>Similitud facial</h3>
-        <p>Comparación de rostros usando DeepFace y embeddings.</p>
+        <img src="/images/dishplanet.png" />
+
+        <h3>DISH PLANET</h3>
+
+        <p
+          data-es="Plataforma web full stack para la gestión digital de restaurantes desarrollada con Spring Boot y PostgreSQL. Incluye carta interactiva, sistema de pedidos, reservas, inventario en tiempo real, autenticación segura con Spring Security, carga automática de datos demo, despliegue cloud con Docker y arquitectura MVC completa."
+          data-en="Full stack web platform for digital restaurant management developed with Spring Boot and PostgreSQL. Includes interactive menu, order system, reservations, real-time inventory, secure authentication with Spring Security, automatic demo data loading, Docker cloud deployment, and complete MVC architecture."
+        >
+          Plataforma web full stack para la gestión digital de restaurantes
+          desarrollada con Spring Boot y PostgreSQL. Incluye carta interactiva,
+          sistema de pedidos, reservas, inventario en tiempo real,
+          autenticación segura con Spring Security, carga automática de datos
+          demo, despliegue cloud con Docker y arquitectura MVC completa.
+        </p>
+
         <div class="tags">
-          <span>Python</span><span>DeepFace</span><span>OpenCV</span>
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>PostgreSQL</span>
+          <span>Hibernate</span>
+          <span>Docker</span>
+          <span>Thymeleaf</span>
+          <span>Spring Security</span>
+          <span>Render</span>
         </div>
-			<a href="https://github.com/Raknar9/Detector-de-Similitudes-Faciales" target="_blank" class="github-btn">
-  🐙 Ver en Github
-      </a>
+
+        <a
+          href="https://github.com/Raknar9/DISH_PLANET"
+          target="_blank"
+          class="github-btn"
+          data-es="🐙 Ver en Github"
+          data-en="🐙 View on Github"
+        >
+          🐙 Ver en Github
+        </a>
+
+        <a
+          href="https://dishplanet.onrender.com"
+          target="_blank"
+          class="demo-btn"
+          data-es="🌐 Demo"
+          data-en="🌐 Live Demo"
+        >
+          🌐 Demo
+        </a>
+
+        <br />
+
+        <a
+          data-es="Credencial admin para demo: admin 12345"
+          data-en="Admin credentials for demo: admin 12345"
+        >
+          Credencial admin para demo: admin 12345
+        </a>
+
+        <br />
+
+        <a
+          data-es="(Demora un momento en iniciar)"
+          data-en="(May take a moment to start)"
+        >
+          (Demora un momento en iniciar)
+        </a>
+      </div>
+
+      <!-- DETECTOR -->
+      <div class="project glass">
+        <img src="/images/facial2.png" />
+
+        <h3
+          data-es="Detector en tiempo real"
+          data-en="Real-Time Face Detector"
+        >
+          Detector en tiempo real
+        </h3>
+
+        <p
+          data-es="Detección de rostros en tiempo real con OpenCV y Streamlit."
+          data-en="Real-time face detection using OpenCV and Streamlit."
+        >
+          Detección de rostros en tiempo real con OpenCV y Streamlit.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>Streamlit</span>
+        </div>
+
+        <a
+          href="https://github.com/Raknar9/Detector-Facial-Tiempo-real"
+          target="_blank"
+          class="github-btn"
+          data-es="🐙 Ver en Github"
+          data-en="🐙 View on Github"
+        >
+          🐙 Ver en Github
+        </a>
+      </div>
+
+      <!-- SIMILITUD -->
+      <div class="project glass">
+        <img src="/images/facial.png" />
+
+        <h3
+          data-es="Similitud facial"
+          data-en="Facial Similarity"
+        >
+          Similitud facial
+        </h3>
+
+        <p
+          data-es="Comparación de rostros usando DeepFace y embeddings."
+          data-en="Face comparison using DeepFace and embeddings."
+        >
+          Comparación de rostros usando DeepFace y embeddings.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>DeepFace</span>
+          <span>OpenCV</span>
+        </div>
+
+        <a
+          href="https://github.com/Raknar9/Detector-de-Similitudes-Faciales"
+          target="_blank"
+          class="github-btn"
+          data-es="🐙 Ver en Github"
+          data-en="🐙 View on Github"
+        >
+          🐙 Ver en Github
+        </a>
       </div>
 
     </div>
   </section>
-   <!-- EXPERIENCIA -->
+
+  <!-- EXPERIENCIA -->
   <section class="section fade">
-    <h2>Experiencia</h2>
+    <h2 data-es="Experiencia" data-en="Experience">
+      Experiencia
+    </h2>
+
     <div class="card glass">
       <h3>Aelis Consulting (2024)</h3>
+
       <ul>
-        <li>Desarrollo en Java</li>
-        <li>Implementación de soluciones en Sage 200</li>
-        <li>Trabajo en entornos empresariales</li>
+        <li
+          data-es="Desarrollo en Java"
+          data-en="Java Development"
+        >
+          Desarrollo en Java
+        </li>
+
+        <li
+          data-es="Implementación de soluciones en Sage 200"
+          data-en="Implementation of Sage 200 solutions"
+        >
+          Implementación de soluciones en Sage 200
+        </li>
+
+        <li
+          data-es="Trabajo en entornos empresariales"
+          data-en="Work in enterprise environments"
+        >
+          Trabajo en entornos empresariales
+        </li>
       </ul>
     </div>
   </section>
 
   <!-- SKILLS -->
-<section id="skills" class="section fade">
-  <h2>Habilidades</h2>
-  <div class="skills-container">
+  <section id="skills" class="section fade">
+    <h2 data-es="Habilidades" data-en="Skills">
+      Habilidades
+    </h2>
 
-    <div class="skill-block glass">
-      <h3>🌐 Desarrollo Web</h3>
-      <ul>
-        <li>HTML, CSS, JavaScript, Bootstrap</li>
-        <li>Spring Boot (Full Stack)</li>
-        <li>APIs REST</li>
-        <li>Spring Security</li>
-        <li>Thymeleaf</li>
-        <li>Angular</li>
-        <li>TypeScript</li>
-        <li>Responsive Design</li>
-        <li>WebSockets / STOMP / SockJS</li>
-        <li>Autenticación y gestión de usuarios</li>
-      </ul>
+    <div class="skills-container">
+
+      <div class="skill-block glass">
+        <h3
+          data-es="🌐 Desarrollo Web"
+          data-en="🌐 Web Development"
+        >
+          🌐 Desarrollo Web
+        </h3>
+
+        <ul>
+          <li>HTML, CSS, JavaScript, Bootstrap</li>
+          <li>Spring Boot (Full Stack)</li>
+          <li>APIs REST</li>
+          <li>Spring Security</li>
+          <li>Thymeleaf</li>
+          <li>Angular</li>
+          <li>TypeScript</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+
+      <div class="skill-block glass">
+        <h3
+          data-es="⚙️ Backend"
+          data-en="⚙️ Backend"
+        >
+          ⚙️ Backend
+        </h3>
+
+        <ul>
+          <li>Java + Spring Boot</li>
+          <li>Spring MVC</li>
+          <li>JPA / Hibernate</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>Spring Data JPA</li>
+          <li>Arquitectura MVC</li>
+          <li>CRUD Applications</li>
+        </ul>
+      </div>
+
+      <div class="skill-block glass">
+        <h3
+          data-es="🚀 DevOps & Cloud"
+          data-en="🚀 DevOps & Cloud"
+        >
+          🚀 DevOps & Cloud
+        </h3>
+
+        <ul>
+          <li>Docker</li>
+          <li>CI/CD</li>
+          <li>GitHub Actions básico</li>
+          <li>Cloud Deployment</li>
+          <li>Render</li>
+          <li>Neon PostgreSQL</li>
+          <li>Variables de entorno</li>
+        </ul>
+      </div>
+
+      <div class="skill-block glass">
+        <h3
+          data-es="🔧 Herramientas"
+          data-en="🔧 Tools"
+        >
+          🔧 Herramientas
+        </h3>
+
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Postman</li>
+          <li>Maven</li>
+          <li>IntelliJ IDEA</li>
+          <li>Docker Desktop</li>
+          <li>pgAdmin</li>
+        </ul>
+      </div>
+
+      <div class="skill-block glass">
+        <h3
+          data-es="🌍 Idiomas"
+          data-en="🌍 Languages"
+        >
+          🌍 Idiomas
+        </h3>
+
+        <ul>
+          <li
+            data-es="Español — Nativo"
+            data-en="Spanish — Native"
+          >
+            Español — Nativo
+          </li>
+
+          <li
+            data-es="Inglés — Avanzado"
+            data-en="English — Advanced"
+          >
+            Inglés — Avanzado
+          </li>
+
+          <li
+            data-es="Japonés — Básico hablado"
+            data-en="Japanese — Basic spoken"
+          >
+            Japonés — Básico hablado
+          </li>
+        </ul>
+      </div>
+
     </div>
+  </section>
 
-    <div class="skill-block glass">
-      <h3>⚙️ Backend</h3>
-      <ul>
-        <li>Java + Spring Boot</li>
-        <li>Spring MVC</li>
-        <li>JPA / Hibernate</li>
-        <li>PostgreSQL</li>
-        <li>MySQL</li>
-        <li>Spring Data JPA</li>
-        <li>Arquitectura MVC</li>
-        <li>CRUD Applications</li>
-        <li>Gestión de sesiones y cookies</li>
-        <li>Integración SMTP / Email Services</li>
-        <li>Generación de PDFs (iText)</li>
-        <li>Patrones de diseño</li>
-        <li>Sage 200c</li>
-      </ul>
-    </div>
-
-    <div class="skill-block glass">
-      <h3>🚀 DevOps & Cloud</h3>
-      <ul>
-        <li>Docker</li>
-        <li>CI/CD</li>
-        <li>GitHub Actions básico</li>
-        <li>Cloud Deployment</li>
-        <li>Render</li>
-        <li>Neon PostgreSQL</li>
-        <li>Variables de entorno</li>
-        <li>Despliegue Full Stack</li>
-        <li>Apache / Nginx</li>
-        <li>Contenedores Docker</li>
-      </ul>
-    </div>
-
-    <div class="skill-block glass">
-      <h3>🔧 Herramientas</h3>
-      <ul>
-        <li>Git & GitHub</li>
-        <li>Postman</li>
-        <li>Maven</li>
-        <li>IntelliJ IDEA</li>
-        <li>Docker Desktop</li>
-        <li>pgAdmin</li>
-        <li>DBeaver</li>
-        <li>Scrum</li>
-      </ul>
-    </div>
-
-    <div class="skill-block glass">
-      <h3>🌍 Idiomas</h3>
-      <ul>
-        <li>Español — Nativo</li>
-        <li>Inglés — Avanzado</li>
-        <li>Japonés — Básico hablado</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
   <!-- INTERESES -->
   <section class="section fade">
-    <h2>Intereses futuros</h2>
+    <h2
+      data-es="Intereses futuros"
+      data-en="Future Interests"
+    >
+      Intereses futuros
+    </h2>
+
     <div class="card glass">
-      <p>Actualmente estoy ampliando mis conocimientos en tecnologías modernas como Angular para desarrollo frontend avanzado y Cloud Computing para despliegue y escalabilidad de aplicaciones.</p>
-      <p>Me mantengo en constante aprendizaje e informado sobre nuevas tecnologías del sector para seguir creciendo como desarrollador.</p>
-      <p>Además adentrándome en Angular y tecnologías Cloud (AWS, despliegue y escalabilidad).</p>
-      <p>Me mantengo actualizado con las tendencias del desarrollo moderno, buscando evolucionar hacia arquitecturas más eficientes y escalables.</p>
+      <p
+        data-es="Actualmente estoy ampliando mis conocimientos en tecnologías modernas como Angular para desarrollo frontend avanzado y Cloud Computing para despliegue y escalabilidad de aplicaciones."
+        data-en="Currently expanding my knowledge in modern technologies such as Angular for advanced frontend development and Cloud Computing for application deployment and scalability."
+      >
+        Actualmente estoy ampliando mis conocimientos en tecnologías modernas
+        como Angular para desarrollo frontend avanzado y Cloud Computing para
+        despliegue y escalabilidad de aplicaciones.
+      </p>
+
+      <p
+        data-es="Me mantengo en constante aprendizaje e informado sobre nuevas tecnologías del sector para seguir creciendo como desarrollador."
+        data-en="I stay in continuous learning and updated on new technologies in the industry to keep growing as a developer."
+      >
+        Me mantengo en constante aprendizaje e informado sobre nuevas
+        tecnologías del sector para seguir creciendo como desarrollador.
+      </p>
     </div>
   </section>
 
   <!-- CONTACTO -->
   <section id="contact" class="section fade">
-    <h2>Contacto</h2>
+    <h2 data-es="Contacto" data-en="Contact">
+      Contacto
+    </h2>
+
     <div class="card glass">
       <p><strong>Email:</strong> aguilejan99@gmail.com</p>
       <p><strong>Teléfono:</strong> +34 633 95 07 28</p>
-      <a href="https://github.com/Raknar9" class="social-btn github-btn" target="_blank">🐙 GitHub</a>
-      <a href="https://www.linkedin.com/in/miguel-aguilera-70b068336/" class="social-btn linkedin-btn" target="_blank">💼 LinkedIn</a>
+
+      <a
+        href="https://github.com/Raknar9"
+        class="social-btn github-btn"
+        target="_blank"
+      >
+        🐙 GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/miguel-aguilera-70b068336/"
+        class="social-btn linkedin-btn"
+        target="_blank"
+      >
+        💼 LinkedIn
+      </a>
     </div>
   </section>
 
 </Layout>
+
 <script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('visible');
-    }
+
+  // ANIMACIONES
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
   });
+
+  document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+
+ // CAMBIO DE IDIOMA
+let currentLang = "es";
+
+const button = document.getElementById("lang-toggle");
+const langText = document.getElementById("lang-text");
+
+button.addEventListener("click", () => {
+
+  currentLang = currentLang === "es" ? "en" : "es";
+
+  document.querySelectorAll("[data-es]").forEach(el => {
+    el.innerHTML = el.dataset[currentLang];
+  });
+
+  // TEXTO DEL BOTÓN
+  langText.innerHTML =
+    currentLang === "es"
+      ? "ES | EN"
+      : "EN | ES";
 });
 
-document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 </script>
 
 <style>
-.demo-btn {
-  display: inline-block;
-  margin-top: 12px;
-  margin-left: 10px;
-  padding: 10px 16px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #111827, #1f2937);
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1px solid #38bdf8;
-  transition: all 0.3s ease;
+
+body{
+  background:#0f172a;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-.demo-btn:hover {
-  background: linear-gradient(90deg, #38bdf8, #818cf8);
-  color: black;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(56,189,248,0.4);
-}
-.github-btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #111827, #1f2937);
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1px solid #38bdf8;
-  transition: all 0.3s ease;
+/* =========================
+   BOTÓN IDIOMA
+========================= */
+
+.lang-btn{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(56,189,248,0.5);
+
+  padding:10px 16px;
+  border-radius:12px;
+
+  color:white;
+  font-weight:600;
+  font-size:14px;
+
+  cursor:pointer;
+
+  transition:all 0.3s ease;
+  backdrop-filter:blur(10px);
 }
 
-.github-btn:hover {
-  background: linear-gradient(90deg, #38bdf8, #818cf8);
-  color: black;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(56,189,248,0.4);
+.lang-btn:hover{
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  color:black;
+  transform:translateY(-2px);
+  box-shadow:0 5px 20px rgba(56,189,248,0.4);
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between; /* separa izquierda y derecha */
-  align-items: center; /* centra verticalmente */
-  padding: 15px 40px;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(10px);
-  z-index: 100;
-   box-sizing: border-box;
+
+.lang-icon{
+  font-size:18px;
 }
-.nav-links {
-  display: flex;
-  gap: 20px;
+
+/* =========================
+   BOTONES DEMO / GITHUB
+========================= */
+
+.demo-btn{
+  display:inline-block;
+  margin-top:12px;
+  margin-left:10px;
+  padding:10px 16px;
+  border-radius:8px;
+  background:linear-gradient(90deg,#111827,#1f2937);
+  color:white;
+  font-weight:600;
+  text-decoration:none;
+  border:1px solid #38bdf8;
+  transition:all 0.3s ease;
 }
-{
-  
+
+.demo-btn:hover{
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  color:black;
+  transform:translateY(-2px);
+  box-shadow:0 5px 15px rgba(56,189,248,0.4);
+}
+
+.github-btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 16px;
+  border-radius:8px;
+  background:linear-gradient(90deg,#111827,#1f2937);
+  color:white;
+  font-weight:600;
+  text-decoration:none;
+  border:1px solid #38bdf8;
+  transition:all 0.3s ease;
+}
+
+.github-btn:hover{
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  color:black;
+  transform:translateY(-2px);
+  box-shadow:0 5px 15px rgba(56,189,248,0.4);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
   display:flex;
   justify-content:space-between;
+  align-items:center;
   padding:15px 40px;
   background:rgba(0,0,0,0.5);
   backdrop-filter:blur(10px);
   z-index:100;
+  box-sizing:border-box;
 }
 
-.navbar a {
-  margin-left:15px;
+.nav-links{
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+.navbar a{
   color:white;
   text-decoration:none;
   padding:8px 14px;
   border-radius:8px;
-  transition: all 0.3s ease;
+  transition:all 0.3s ease;
 }
 
-.navbar a:hover {
-  background: rgba(56,189,248,0.2);
+.navbar a:hover{
+  background:rgba(56,189,248,0.2);
   color:#38bdf8;
 }
 
-/* BOTONES REDES */
-.social-btn {
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  padding:120px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:50px;
+}
+
+.gradient-text{
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero-img img{
+  width:220px;
+  border-radius:50%;
+  box-shadow:0 0 30px #38bdf8;
+}
+
+/* =========================
+   BOTONES HERO
+========================= */
+
+.hero-buttons{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+
+.btn{
+  padding:10px 20px;
+  border-radius:12px;
+  text-decoration:none;
+  transition:all 0.3s ease;
+}
+
+/* BOTÓN PRINCIPAL */
+
+.cv-btn{
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  color:black;
+  font-weight:bold;
+  box-shadow:0 0 15px rgba(56,189,248,0.35);
+  border:none;
+}
+
+.cv-btn:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 10px 25px rgba(56,189,248,0.45);
+}
+
+/* BOTÓN SECUNDARIO */
+
+.cv-btn-outline{
+  background:rgba(255,255,255,0.05);
+  border:1px solid #38bdf8;
+  color:white;
+  font-weight:bold;
+}
+
+.cv-btn-outline:hover{
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  color:black;
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 10px 25px rgba(56,189,248,0.45);
+}
+
+.big{
+  padding:14px 26px;
+  font-size:16px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+  padding:80px 60px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.glass{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  border-radius:15px;
+  padding:20px;
+}
+
+.project img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.project:hover{
+  transform:translateY(-10px);
+  transition:0.3s;
+}
+
+.tags span{
+  background:#38bdf8;
+  color:black;
+  padding:4px 8px;
+  margin:4px;
+  border-radius:6px;
+  display:inline-block;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+.fade{
+  opacity:0;
+  transform:translateY(20px);
+  transition:0.6s;
+}
+
+.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-btn{
   display:inline-block;
   padding:10px 18px;
   margin-top:10px;
@@ -375,148 +836,70 @@ document.querySelectorAll('.fade').forEach(el => observer.observe(el));
   border-radius:8px;
   font-weight:bold;
   text-decoration:none;
-  transition: all 0.3s ease;
 }
 
-.github-btn {
-  background:#111827;
-  border:1px solid #38bdf8;
-}
-
-.github-btn:hover {
-  background:#38bdf8;
-  color:black;
-}
-
-.linkedin-btn {
+.linkedin-btn{
   background:#0a66c2;
 }
 
-.linkedin-btn:hover {
-  background:#38bdf8;
-  color:black;
-}
-
-.hero { padding:120px 60px; display:flex; justify-content:space-between; }
-
-.gradient-text {
-  background:linear-gradient(90deg,#38bdf8,#818cf8);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-.hero-img img { width:200px; border-radius:50%; box-shadow:0 0 30px #38bdf8; }
-.btn { padding:10px 20px; border-radius:8px; }
-
-.cv-btn {
-  background: linear-gradient(90deg,#38bdf8,#818cf8);
-  color:black;
-  font-weight:bold;
-  box-shadow:0 0 15px rgba(56,189,248,0.6);
-}
-
-.cv-btn:hover {
-  transform:scale(1.05);
-}
-
-.big { padding:14px 26px; font-size:16px; }
-
-.section { padding:80px 60px; }
-
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
-
-.glass { background:rgba(255,255,255,0.05); backdrop-filter:blur(10px); border-radius:15px; padding:20px; }
-
-.project img {
-  width:100%;
-  height:200px;
-  object-fit:cover;
-  border-radius:10px;
-}
-
-.project:hover { transform:translateY(-10px); transition:0.3s; }
-
-.tags span { background:#38bdf8; color:black; padding:4px 8px; margin:4px; border-radius:6px; }
-
-.skills-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
-
-.fade { opacity:0; transform:translateY(20px); transition:0.6s; }
-.visible { opacity:1; transform:translateY(0); }
-
 /* =========================
-   RESPONSIVE MOBILE
+   RESPONSIVE
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-  .navbar {
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 10px;
+  .navbar{
+    padding:15px 20px;
+    flex-direction:column;
+    gap:15px;
   }
 
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
   }
 
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 140px 20px 60px;
-    gap: 30px;
+  .hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:140px 20px 60px;
   }
 
-  .hero-text {
-    width: 100%;
+  .hero-buttons{
+    justify-content:center;
   }
 
-  .hero-img img {
-    width: 160px;
+  .hero-img img{
+    width:170px;
   }
 
-  .title {
-    font-size: 36px;
+  .title{
+    font-size:38px;
   }
 
-  .subtitle {
-    font-size: 22px;
+  .subtitle{
+    font-size:22px;
   }
 
-  .hero-buttons {
-    display: flex;
-    justify-content: center;
+  .section{
+    padding:60px 20px;
   }
 
-  .section {
-    padding: 60px 20px;
+  .grid,
+  .skills-container{
+    grid-template-columns:1fr;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
+  .social-btn{
+    display:block;
+    text-align:center;
+    margin-bottom:10px;
   }
 
-  .skills-container {
-    grid-template-columns: 1fr;
+  .lang-btn{
+    padding:9px 14px;
+    font-size:13px;
   }
-
-  .project img {
-    height: 190px;
-  }
-
-  .card,
-  .project,
-  .skill-block {
-    padding: 18px;
-  }
-
-  .social-btn {
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-
 }
+
 </style>
