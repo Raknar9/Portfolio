@@ -25,10 +25,21 @@ import Layout from '../layouts/Layout.astro';
       <h2 class="subtitle">Junior Developer</h2>
 
       <div class="text-block">
-        <p>Apasionado por la tecnología y sus avances, con gran capacidad de adaptabilidad y aprendizaje continuo en el desarrollo de software.</p>
-        <p>Experiencia en desarrollo full-stack con tecnologías modernas y entornos colaborativos.</p>
-        <p>Capacidad de trabajo en equipo y orientación a la resolución de problemas.</p>
-      </div>
+        <p>
+             Apasionado por el desarrollo de software y las tecnologías cloud,
+              con gran capacidad de adaptación y aprendizaje continuo en entornos full stack.
+        </p>
+
+         <p>
+           Experiencia desarrollando aplicaciones web completas con Java,
+            Spring Boot, PostgreSQL, Docker y despliegue cloud utilizando herramientas modernas.
+          </p>
+
+          <p>
+             Interés en arquitecturas backend, seguridad, bases de datos,
+             automatización de despliegues y trabajo colaborativo mediante metodologías ágiles.
+          </p>
+</div>
 
       <div class="hero-buttons">
         <a href="/cv.pdf" download class="btn cv-btn big">⬇ Descargar CV</a>
@@ -76,17 +87,48 @@ import Layout from '../layouts/Layout.astro';
 
 </div>
 
-      <div class="project glass">
-        <img src="/images/dishplanet.png">
-        <h3>Dishplanet</h3>
-        <p>Aplicación para gestión de restaurantes con Spring Boot, MySQL y seguridad con Spring Security.</p>
-        <div class="tags">
-          <span>Java</span><span>Spring</span><span>MySQL</span><span>Docker</span>
-        </div>
-        <a href="https://github.com/Raknar9/DishPlanet" target="_blank" class="github-btn">
-  🐙 Ver en Github
-      </a>
-      </div>
+     <div class="project glass">
+  <img src="/images/dishplanet.png">
+
+  <h3>DISH PLANET</h3>
+
+  <p>
+    Plataforma web full stack para la gestión digital de restaurantes desarrollada con Spring Boot y PostgreSQL.
+    Incluye carta interactiva, sistema de pedidos, reservas, inventario en tiempo real,
+    autenticación segura con Spring Security, carga automática de datos demo,
+    despliegue cloud con Docker y arquitectura MVC completa.
+  </p>
+
+  <div class="tags">
+    <span>Java</span>
+    <span>Spring Boot</span>
+    <span>PostgreSQL</span>
+    <span>Hibernate</span>
+    <span>Docker</span>
+    <span>Thymeleaf</span>
+    <span>Spring Security</span>
+    <span>Render</span>
+  </div>
+
+  <a
+    href="https://github.com/Raknar9/DISH_PLANET"
+    target="_blank"
+    class="github-btn"
+  >
+    🐙 Ver en Github
+  </a>
+
+  <a
+    href="https://dishplanet.onrender.com"
+    target="_blank"
+    class="demo-btn"
+  >
+    🌐 Demo
+  </a>
+  <br><a>Credencial admin para demo: admin 12345</a>
+  <br><a>(Demora un momento en iniciar)</a>
+
+</div>
 
       <div class="project glass">
         <img src="/images/facial2.png">
@@ -128,63 +170,86 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section fade">
-    <h2>Habilidades</h2>
-    <div class="skills-container">
+<section id="skills" class="section fade">
+  <h2>Habilidades</h2>
+  <div class="skills-container">
 
-      <div class="skill-block glass">
-        <h3>🌐 Desarrollo Web</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript, Bootstrap</li>
-          <li>Spring Boot (Full Stack)</li>
-          <li>APIs REST</li>
-          <li>Spring Security</li>
-          <li>Python</li>
-          <li>Angular</li>
-          <li>TypeScript</li>
-        </ul>
-      </div>
-
-      <div class="skill-block glass">
-        <h3>⚙️ Backend</h3>
-        <ul>
-          <li>JPA / Hibernate</li>
-          <li>Java + Spring Boot</li>
-          <li>MySQL</li>
-          <li>Patrones de diseño</li>
-          <li>Sage 200c</li>
-        </ul>
-      </div>
-
-      <div class="skill-block glass">
-        <h3>🚀 DevOps</h3>
-        <ul>
-          <li>Docker</li>
-          <li>Apache / Nginx</li>
-          <li>CI/CD</li>
-        </ul>
-      </div>
-
-      <div class="skill-block glass">
-        <h3>🔧 Herramientas</h3>
-        <ul>
-          <li>Git & GitHub</li>
-          <li>Scrum</li>
-          <li>Postman</li>
-        </ul>
-      </div>
-
-      <div class="skill-block glass">
-         <h3>🌍 Idiomas</h3>
-          <ul>
-            <li>Español — Nativo</li>
-            <li>Inglés — Avanzado</li>
-            <li>Japonés — Básico hablado</li>
-          </ul>
-      </div>
-
+    <div class="skill-block glass">
+      <h3>🌐 Desarrollo Web</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript, Bootstrap</li>
+        <li>Spring Boot (Full Stack)</li>
+        <li>APIs REST</li>
+        <li>Spring Security</li>
+        <li>Thymeleaf</li>
+        <li>Angular</li>
+        <li>TypeScript</li>
+        <li>Responsive Design</li>
+        <li>WebSockets / STOMP / SockJS</li>
+        <li>Autenticación y gestión de usuarios</li>
+      </ul>
     </div>
-  </section>
+
+    <div class="skill-block glass">
+      <h3>⚙️ Backend</h3>
+      <ul>
+        <li>Java + Spring Boot</li>
+        <li>Spring MVC</li>
+        <li>JPA / Hibernate</li>
+        <li>PostgreSQL</li>
+        <li>MySQL</li>
+        <li>Spring Data JPA</li>
+        <li>Arquitectura MVC</li>
+        <li>CRUD Applications</li>
+        <li>Gestión de sesiones y cookies</li>
+        <li>Integración SMTP / Email Services</li>
+        <li>Generación de PDFs (iText)</li>
+        <li>Patrones de diseño</li>
+        <li>Sage 200c</li>
+      </ul>
+    </div>
+
+    <div class="skill-block glass">
+      <h3>🚀 DevOps & Cloud</h3>
+      <ul>
+        <li>Docker</li>
+        <li>CI/CD</li>
+        <li>GitHub Actions básico</li>
+        <li>Cloud Deployment</li>
+        <li>Render</li>
+        <li>Neon PostgreSQL</li>
+        <li>Variables de entorno</li>
+        <li>Despliegue Full Stack</li>
+        <li>Apache / Nginx</li>
+        <li>Contenedores Docker</li>
+      </ul>
+    </div>
+
+    <div class="skill-block glass">
+      <h3>🔧 Herramientas</h3>
+      <ul>
+        <li>Git & GitHub</li>
+        <li>Postman</li>
+        <li>Maven</li>
+        <li>IntelliJ IDEA</li>
+        <li>Docker Desktop</li>
+        <li>pgAdmin</li>
+        <li>DBeaver</li>
+        <li>Scrum</li>
+      </ul>
+    </div>
+
+    <div class="skill-block glass">
+      <h3>🌍 Idiomas</h3>
+      <ul>
+        <li>Español — Nativo</li>
+        <li>Inglés — Avanzado</li>
+        <li>Japonés — Básico hablado</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
   <!-- INTERESES -->
   <section class="section fade">
     <h2>Intereses futuros</h2>
