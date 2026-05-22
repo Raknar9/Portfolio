@@ -42,44 +42,65 @@ import Layout from '../layouts/Layout.astro';
   <!-- HERO -->
   <section class="hero fade">
     <div class="hero-text">
-      <h1 class="title gradient-text">Miguel Aguilera</h1>
 
-      <h2
-        class="subtitle"
-        data-es="Junior Developer"
-        data-en="Junior Developer"
-      >
-        Junior Developer
-      </h2>
+  <h1 class="title gradient-text">
+    Miguel Aguilera
+  </h1>
 
-      <div class="text-block">
-        <p
-          data-es="Apasionado por el desarrollo de software y las tecnologías cloud, con gran capacidad de adaptación y aprendizaje continuo en entornos full stack."
-          data-en="Passionate about software development and cloud technologies, with strong adaptability and continuous learning skills in full stack environments."
-        >
-          Apasionado por el desarrollo de software y las tecnologías cloud,
-          con gran capacidad de adaptación y aprendizaje continuo en entornos
-          full stack.
-        </p>
+  <h2
+    class="subtitle"
+    data-es="Java Backend & Full Stack Developer"
+    data-en="Java Backend & Full Stack Developer"
+  >
+    Java Backend & Full Stack Developer
+  </h2>
 
-        <p
-          data-es="Experiencia desarrollando aplicaciones web completas con Java, Spring Boot, PostgreSQL, Docker y despliegue cloud utilizando herramientas modernas."
-          data-en="Experience developing complete web applications using Java, Spring Boot, PostgreSQL, Docker, and cloud deployment with modern tools."
-        >
-          Experiencia desarrollando aplicaciones web completas con Java,
-          Spring Boot, PostgreSQL, Docker y despliegue cloud utilizando
-          herramientas modernas.
-        </p>
+  <div class="text-block">
 
-        <p
-          data-es="Interés en arquitecturas backend, seguridad, bases de datos, automatización de despliegues y trabajo colaborativo mediante metodologías ágiles."
-          data-en="Interested in backend architectures, security, databases, deployment automation, and collaborative work using agile methodologies."
-        >
-          Interés en arquitecturas backend, seguridad, bases de datos,
-          automatización de despliegues y trabajo colaborativo mediante
-          metodologías ágiles.
-        </p>
-      </div>
+    <p
+      data-es="Desarrollador enfocado en backend y arquitecturas modernas, especializado en Java, Spring Boot y aplicaciones distribuidas basadas en microservicios."
+      
+      data-en="Developer focused on backend and modern architectures, specialized in Java, Spring Boot, and distributed microservices-based applications."
+    >
+      Desarrollador enfocado en backend y arquitecturas modernas,
+      especializado en Java, Spring Boot y aplicaciones distribuidas
+      basadas en microservicios.
+    </p>
+
+    <p
+      data-es="Experiencia desarrollando aplicaciones full stack con Angular, PostgreSQL, Docker y sistemas event-driven utilizando Apache Kafka, API Gateway y comunicación en tiempo real mediante Server-Sent Events (SSE)."
+      
+      data-en="Experience developing full stack applications with Angular, PostgreSQL, Docker, and event-driven systems using Apache Kafka, API Gateway, and real-time communication through Server-Sent Events (SSE)."
+    >
+      Experiencia desarrollando aplicaciones full stack con Angular,
+      PostgreSQL, Docker y sistemas event-driven utilizando Apache Kafka,
+      API Gateway y comunicación en tiempo real mediante
+      Server-Sent Events (SSE).
+    </p>
+
+    <p
+      data-es="Interés en cloud computing, DevOps, arquitecturas escalables y desarrollo de software empresarial aplicando buenas prácticas, APIs REST y automatización mediante contenedores Docker."
+      
+      data-en="Interested in cloud computing, DevOps, scalable architectures, and enterprise software development applying best practices, REST APIs, and automation through Docker containers."
+    >
+      Interés en cloud computing, DevOps, arquitecturas escalables y
+      desarrollo de software empresarial aplicando buenas prácticas,
+      APIs REST y automatización mediante contenedores Docker.
+    </p>
+
+    <p
+      data-es="Capacidad de adaptación rápida, aprendizaje continuo y enfoque en construir proyectos reales orientados a entornos profesionales modernos."
+      
+      data-en="Strong adaptability, continuous learning mindset, and focus on building real-world projects oriented to modern professional environments."
+    >
+      Capacidad de adaptación rápida, aprendizaje continuo y enfoque en
+      construir proyectos reales orientados a entornos profesionales
+      modernos.
+    </p>
+
+  </div>
+
+</div>
 
       <!-- HERO BUTTONS -->
 <div class="hero-buttons">
@@ -97,7 +118,7 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- CV INGLÉS -->
   <a
-    href="/Miguel_Aguilera_CV_English.pdf"
+    href="/MiguelAguilera_CV_English.pdf"
     download
     class="btn cv-btn-outline big"
     data-es="🌍 Descargar CV Inglés"
@@ -119,6 +140,52 @@ import Layout from '../layouts/Layout.astro';
     <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
 
     <div class="grid">
+
+      <!-- SMARTSHOP -->
+<div class="project glass">
+  <img src="/images/ecomerce.png" />
+
+  <h3>SmartShop Event Commerce</h3>
+
+  <p
+    data-es="Plataforma e-commerce basada en arquitectura de microservicios event-driven desarrollada con Spring Boot, Apache Kafka, PostgreSQL y Angular. Incluye procesamiento de órdenes en tiempo real, comunicación asíncrona entre servicios, API Gateway, Server-Sent Events (SSE), contenedores Docker y frontend moderno conectado a una arquitectura distribuida."
+    
+    data-en="Event-driven e-commerce platform based on microservices architecture developed with Spring Boot, Apache Kafka, PostgreSQL and Angular. Includes real-time order processing, asynchronous communication between services, API Gateway, Server-Sent Events (SSE), Docker containers, and a modern frontend connected to a distributed architecture."
+  >
+    Plataforma e-commerce basada en arquitectura de microservicios
+    event-driven desarrollada con Spring Boot, Apache Kafka,
+    PostgreSQL y Angular. Incluye procesamiento de órdenes en tiempo
+    real, comunicación asíncrona entre servicios, API Gateway,
+    Server-Sent Events (SSE), contenedores Docker y frontend moderno
+    conectado a una arquitectura distribuida.
+  </p>
+
+  <div class="tags">
+    <span>Java</span>
+    <span>Spring Boot</span>
+    <span>Microservices</span>
+    <span>Kafka</span>
+    <span>Angular</span>
+    <span>TypeScript</span>
+    <span>PostgreSQL</span>
+    <span>Docker</span>
+    <span>API Gateway</span>
+    <span>SSE</span>
+    <span>Event-Driven</span>
+  </div>
+
+  <a
+    href="https://github.com/Raknar9/Smartshop-event-commerce"
+    target="_blank"
+    class="github-btn"
+    data-es="🐙 Ver en Github"
+    data-en="🐙 View on Github"
+  >
+    🐙 Ver en Github
+  </a>
+
+
+</div>
 
       <!-- TASKFLOW -->
       <div class="project glass">
@@ -230,6 +297,8 @@ import Layout from '../layouts/Layout.astro';
           (Demora un momento en iniciar)
         </a>
       </div>
+
+    
 
       <!-- DETECTOR -->
       <div class="project glass">
@@ -383,6 +452,11 @@ import Layout from '../layouts/Layout.astro';
           <li>Spring Data JPA</li>
           <li>Arquitectura MVC</li>
           <li>CRUD Applications</li>
+          <li>Arquitectura Microservicios</li>
+          <li>Apache Kafka</li>
+          <li>Arquitectura Event-Driven</li>
+          <li>API Gateway</li>
+          <li>Server-Sent Events (SSE)</li>
         </ul>
       </div>
 
@@ -402,6 +476,10 @@ import Layout from '../layouts/Layout.astro';
           <li>Render</li>
           <li>Neon PostgreSQL</li>
           <li>Variables de entorno</li>
+          <li>Docker Compose</li>
+          <li>Contenedores Multi-Service</li>
+          <li>Networking entre servicios</li>
+          <li>Arquitecturas distribuidas</li>
         </ul>
       </div>
 
